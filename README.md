@@ -1,8 +1,8 @@
 # HW
-|Week| Homework  | Project  |
+|Week| Homework  |Project|
 |:---:|:---:|:---:|
-|1| [Excel](HW1/README.md)  |   |
-|2| [VBA]  |(HW2/README.md)   |
+|1| [Excel](HW1/README.md)|   |
+|2| [VBA](HW2/README.md)|   |
 |3| [Python]  |   |
 |4| [Pandas]  |   |
 |5| [Matplotlib]  |   |
