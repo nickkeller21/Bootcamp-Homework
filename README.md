@@ -1,7 +1,7 @@
 # HW
 | Homework  | Link  |
 |:---:|:---:|
-| [Excel]  |   |
+| [Excel](HW1/README.md)  |   |
 | [VBA]  |   |
 | [Python]  |   |
 | [Pandas]  |   |
