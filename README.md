@@ -3,7 +3,7 @@
 |:---:|:---:|:---:|
 |1| [Excel](HW1/README.md)|   |
 |2| [VBA](HW2/README.md)|   |
-|3| [Python]  |   |
+|3| [Python](HW3/README.md)  |   |
 |4| [Pandas]  |   |
 |5| [Matplotlib]  |   |
 |6| [Python APIs]  |   |
