@@ -4,7 +4,7 @@
 |1| [Excel](HW1)|   |
 |2| [VBA](HW2)|   |
 |3| [Python](HW3)  |   |
-|4| [Pandas]  |   |
+|4| [Pandas](HW4) |   |
 |5| [Matplotlib]  |   |
 |6| [Python APIs]  |   |
 |7| [SQL]  |   |
