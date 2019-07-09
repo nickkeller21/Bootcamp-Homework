@@ -13139,7 +13139,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Dependencies and Setup</span>
@@ -13177,7 +13177,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">uniquePlayers</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;Total Players&quot;</span><span class="p">:[</span><span class="n">purchase_data</span><span class="o">.</span><span class="n">SN</span><span class="o">.</span><span class="n">nunique</span><span class="p">()]})</span>
@@ -13194,7 +13194,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[3]:</div>
+    <div class="prompt output_prompt">Out[2]:</div>
 
 
 
@@ -13264,7 +13264,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">uniqueItems</span> <span class="o">=</span> <span class="p">[</span><span class="n">purchase_data</span><span class="p">[</span><span class="s2">&quot;Item ID&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()]</span>
@@ -13290,7 +13290,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[4]:</div>
+    <div class="prompt output_prompt">Out[3]:</div>
 
 
 
@@ -13363,7 +13363,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">genderDemo</span> <span class="o">=</span> <span class="n">purchase_data</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">subset</span> <span class="o">=</span> <span class="s1">&#39;SN&#39;</span><span class="p">)</span>
@@ -13384,7 +13384,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[5]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -13445,7 +13445,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">genderAnalysis</span> <span class="o">=</span> <span class="n">purchase_data</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;Gender&quot;</span><span class="p">])</span>
@@ -13468,7 +13468,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[6]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -13539,7 +13539,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">noDup</span> <span class="o">=</span> <span class="n">purchase_data</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">subset</span> <span class="o">=</span> <span class="s1">&#39;SN&#39;</span><span class="p">)</span>
@@ -13579,7 +13579,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[7]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -13694,7 +13694,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bins</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">19</span><span class="p">,</span><span class="mi">24</span><span class="p">,</span><span class="mi">29</span><span class="p">,</span><span class="mi">34</span><span class="p">,</span><span class="mi">39</span><span class="p">,</span><span class="n">purchase_data</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()]</span>
@@ -13720,7 +13720,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -13855,7 +13855,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">SNgroup</span> <span class="o">=</span> <span class="n">purchase_data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;SN&#39;</span><span class="p">)</span>
@@ -13880,7 +13880,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -13990,7 +13990,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">itemGroup</span> <span class="o">=</span> <span class="n">purchase_data</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Item ID&#39;</span><span class="p">,</span><span class="s1">&#39;Item Name&#39;</span><span class="p">])</span>
@@ -14020,7 +14020,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[22]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -14128,11 +14128,10 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">itemAnalysis</span> <span class="o">=</span> <span class="n">itemAnalysis</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Total Purchase Value&#39;</span><span class="p">],</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
-<span class="n">itemAnalysis</span><span class="p">[</span><span class="s1">&#39;Total Purchase Value&#39;</span><span class="p">]</span><span class="o">=</span> <span class="n">itemAnalysis</span><span class="p">[</span><span class="s1">&#39;Total Purchase Value&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="s1">&#39;$</span><span class="si">{:,.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">)</span>
 <span class="n">itemAnalysis</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
@@ -14146,7 +14145,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[23]:</div>
+    <div class="prompt output_prompt">Out[10]:</div>
 
 
 
@@ -14188,35 +14187,35 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
       <td>Oathbreaker, Last Hope of the Breaking Storm</td>
       <td>12</td>
       <td>$4.23</td>
-      <td>$50.76</td>
+      <td>50.76</td>
     </tr>
     <tr>
       <th>82</th>
       <td>Nirvana</td>
       <td>9</td>
       <td>$4.90</td>
-      <td>$44.10</td>
+      <td>44.10</td>
     </tr>
     <tr>
       <th>145</th>
       <td>Fiery Glass Crusader</td>
       <td>9</td>
       <td>$4.58</td>
-      <td>$41.22</td>
+      <td>41.22</td>
     </tr>
     <tr>
       <th>92</th>
       <td>Final Critic</td>
       <td>8</td>
       <td>$4.88</td>
-      <td>$39.04</td>
+      <td>39.04</td>
     </tr>
     <tr>
       <th>103</th>
       <td>Singed Scalpel</td>
       <td>8</td>
       <td>$4.35</td>
-      <td>$34.80</td>
+      <td>34.80</td>
     </tr>
   </tbody>
 </table>
