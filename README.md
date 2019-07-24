@@ -6,7 +6,7 @@
 |3| [Python](HW3)  |   |
 |4| [Pandas](HW4) |   |
 |5| [Matplotlib](HW5)  |   |
-|6| [Python APIs]  |   |
+|6| [Python APIs](HW6)  |   |
 |7| [SQL]  |   |
 |8| [SQL Alchemy]  |   |
 |9| [HTML and CSS]  |   |
