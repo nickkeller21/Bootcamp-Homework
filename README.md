@@ -7,8 +7,8 @@
 |4| [Pandas](HW4) |   |
 |5| [Matplotlib](HW5)  |   |
 |6| [Python APIs](HW6)  |   |
-|7| [SQL]  |   |
-|8| [SQL Alchemy]  |   |
+|7| [SQL](HW9)  |   |
+|8| [SQL Alchemy](HW10)  |   |
 |9| [HTML and CSS]  |   |
 |10| [Web Scraping and Mongo]  |   |
 |11| [JavaScript]  |   |
