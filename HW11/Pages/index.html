@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Bootscamp HW11 </title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="style.css">
+
+
+  </head>
+  <body>
+      <nav class="my-navbar navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">Latitude</a>
+              
+            </div>
+        
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="my-menu nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="MaxTemp.html">Max temperature</a></li>
+                        <li><a href="Humidity.html">Humidity</a></li>
+                        <li><a href="Cloudiness.html">Cloudiness</a></li>
+                        <li><a href="Wind_speed.html">Wind speed</a></li>
+                      </ul>
+                    </li>
+                <li class="comparison"><a href="Comparison.html">Comparison <span class="sr-only">(current)</span></a></li>
+                <li><a href="Data.html">Data</a></li>
+                
+              </ul>
+
+            </div>
+          </div>
+      </nav>
+
+
+      <div class="container">
+          <div class =" row">
+              <div class ="figure col-md-7">
+                  <h3 class="page_title">Summary: Latitude vs X</h3>
+                  <div class="horizontal_line"> </div>
+                  <img  src="../Resources/assets/images/Fig1.png" alt="..."  style="width: 70%" align = "left" hspace = 10 vspace =10>
+                  
+                  <div class="box_index">
+                    <p class="index_par1">  
+                      The purpose of this project is to analyze how weather changes as we move closer to the equator. To accomplish this, we first pulled data from 
+                      OpenWeatherMap API to assemble the dataset on over 500 cities.
+                    </p>
+                    <p class="index_par1"> 
+                        After assembling the dataset we used Matplotlib to plot various aspects of 
+                        weather vs lattitude. Factors we looked at included :  temperature, cloudiness, windspeed and humidity. This provides the source data and visualization as part of 
+                        the analysis, as well as explainations and description of any trends and correlations witnessed.
+                    </p>
+                   </div>
+                </div>
+                
+                <div class ="left_margin white_background col-md-4">
+                    <h3 class="page_title">Visualization</h3>
+                    <div class="horizontal_line"> </div>
+                    <div class =" white_background col-sm-4 col-md-6 col-sm-6">
+                        <a href="MaxTemp.html"><img  src="../Resources/assets/images/Fig1.png" alt="..."  style="width: 100%" align = "left" hspace = 10 vspace =10>
+                        <a href="Cloudiness.html"><img  src="../Resources/assets/images/Fig3.png" alt="..."  style="width: 100%" align = "left" hspace = 10 vspace =10>
+                    </div>
+
+                    <div class =" white_background col-sm-4 col-md-6">
+                        <a href="Humidity.html"><img  src="../Resources/assets/images/Fig2.png" alt="..."  style="width: 100%" align = "left" hspace = 10 vspace =10>
+                        <a href="Wind_speed.html"><img  src="../Resources/assets/images/Fig4.png" alt="..."  style="width: 100%" align = "left" hspace = 10 vspace =10>
+                    </div> 
+                </a>     
+                </div>          
+          </div>
+        </div>
+
+        <div class="container">
+                <div class =" row">
+                    <div class ="col-md-12">
+                        <footer class="footer">
+                <p>&copy; Aug 2019 - Rice Data Analytics Boot camp</p>
+        </footer>
+
+                    </div>
+                </div>  
+            </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </body>
+</html>

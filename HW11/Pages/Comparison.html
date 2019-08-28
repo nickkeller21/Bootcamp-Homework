@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Comparison</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+         figure {
+              display: block;
+              margin-top: 1em;
+              margin-bottom: 5em;
+              margin-left: 2%;
+              margin-right: 2%;
+        }
+    </style>
+</head>
+<body>
+      <nav class="my-navbar navbar navbar-default">
+             <div class="container">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Latitude</a>
+                    
+                  </div>
+
+             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="my-menu nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="MaxTemp.html">Max temperature</a></li>
+                              <li><a href="Humidity.html">Humidity</a></li>
+                              <li><a href="Cloudiness.html">Cloudiness</a></li>
+                              <li><a href="Wind_speed.html">Wind speed</a></li>
+                            </ul>
+                          </li>
+                      <li class="comparison"><a href="Comparison.html">Comparison <span class="sr-only">(current)</span></a></li>
+                      <li><a href="Data.html">Data</a></li>
+                      
+                    </ul>
+      
+                  </div>
+                </div>
+            </nav>
+
+            <div class="container">
+                    <div class =" row">
+                        <div class ="figure col-md-12">
+                            <h3 class="page_title">Visualization</h3>
+                            <div class="horizontal_line"> </div>
+                            <h5 class="comp_comment">Click on any plot to get an in-depth analysis</h5>
+                            <div class ="col-sm-4 col-md-6">
+                                <figure>
+                                    <h3 class="comp_fig_title">Max. temperature</h3>
+                                    <a href="MaxTemp.html"><img  src="../Resources/assets/images/Fig1.png" alt="..."  style="width: 100%" align = "left" hspace = 10 vspace =10></a>
+                                </figure>
+                                <figure>
+                                    <h4 class="comp_fig_title">Cloudiness</h4>
+                                    <a href="Cloudiness.html"><img  src="../Resources/assets/images/Fig3.png" alt="..."  style="width: 100%" align = "left" hspace = 10 vspace =10></a>
+                                </figure>
+                            </div> 
+
+                            <div class ="col-sm-4 col-md-6">
+                                    <figure>
+                                         <h4 class="comp_fig_title">Humidity</h4>
+                                         <a href="Humidity.html"><img  src="../Resources/assets/images/Fig2.png" alt="..."  style="width: 100%" align = "left" hspace = 10 vspace =10></a>
+                                    </figure>
+                                    <figure>
+                                         <h4 class="comp_fig_title">Wind speed</h4>
+                                         <a href="Wind_speed.html"><img  src="../Resources/assets/images/Fig4.png" alt="..."  style="width: 100%" align = "left" hspace = 10 vspace =10></a>
+                                    </figure>
+                                </div>         
+                        </div>  
+                    </div> 
+                </div>  
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</body>
+</html>

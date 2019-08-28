@@ -1,0 +1,138 @@
+
+@media (min-width: 1200px) {
+  body {
+      background-color: lightgrey;
+
+  }
+}
+
+@media (max-width: 900px) {
+body{
+
+  background-color: lightgrey;
+}
+}
+
+.white_background{
+  background-color: white;
+  border-radius: 20;
+
+}
+.horizontal_line
+{
+  border-bottom: 2px solid darkturquoise;
+  height: 5px;
+}
+
+.figure
+{
+  background-color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius:10;
+}
+
+.my-navbar
+{
+   background:white;
+   border-radius:0;
+   border:0;
+
+}
+
+.my-navbar .navbar-brand
+{
+    color:white;
+    background:darkturquoise;
+    border-radius:10;
+}
+
+.dropdown-menu {
+    background:white;
+}
+
+.box_index .index_par1
+{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-size: 14px;
+    text-align: left;
+    font:40px;
+    color: black;
+}
+
+.comp_fig_title
+{
+    color:darkturquoise;
+    border-radius:10;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -10px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.comp_comment
+{
+    margin-top: 30px;
+    margin-bottom: -5px;
+    margin-left: 30px;
+}
+
+.table
+{
+  background-color: white;
+  border-radius: 20;
+}
+
+.page_title
+{
+  color:darkturquoise;
+  font-weight: 600;
+  
+}
+
+.table_text
+{
+  font-weight: 100;
+  font-size: 110%;
+  margin-top:2%;
+  margin-bottom:2%;
+}
+
+.container
+{
+  border-radius: 5;
+}
+
+.left_margin
+{
+  margin-left: 2%;
+}
+
+.img-responsive {
+  margin: 0 auto;
+}
+
+.caption
+{
+  font-weight: 100;
+  font-size: 100%;
+  padding: 0;
+  border: 0;
+
+}
+
+
+
+.thumbnail {
+padding: 0;
+border: 0;
+}
+
+.bold
+{
+  font-size: 150%;
+  font-weight: 300;
+}
