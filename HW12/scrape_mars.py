@@ -4,32 +4,35 @@ from splinter import Browser
 from bs4 import BeautifulSoup
 import tweepy
 import pandas as pd
-import  config
+import config
 import time
 
 #Site Navigation
-executable_path = {"executable_path": "chromedriver.exe"}
-browser = Browser("chrome", **executable_path, headless=False)
-
 
 
 # Defining scrape & dictionary
 def scrape():
     final_data = {}
     output = marsNews()
-    final_data.update(output[0])
-    final_data.update(output[1])
-    final_data.update(marsImage())
-    final_data.update(marsWeather())
-    final_data.update(marsFacts())
-    final_data.update(marsHem())
+    final_data["mars_news"] = output[0]
+    final_data["mars_paragraph"] = output[1]
+    final_data["mars_image"] = marsImage()
+    final_data["mars_weather"] = marsWeather()
+    final_data["mars_facts"] = marsFacts()
+    final_data["mars_hemisphere"] = marsHem()
 
     return final_data
+
+def init_browser():
+    # @NOTE: Replace the path with your actual path to the chromedriver
+    #executable_path = {"executable_path": "/usr/local/bin/chromedriver"}
+    executable_path = {"executable_path": "chromedriver.exe"}
+    return Browser("chrome", **executable_path, headless=False)
 
 # # NASA Mars News
 
 def marsNews():
-
+    browser=init_browser()
     news_url = "https://mars.nasa.gov/news/"
     browser.visit(news_url)
     html = browser.html
@@ -42,12 +45,14 @@ def marsNews():
 
 # # JPL Mars Space Images - Featured Image
 def marsImage():
+    browser=init_browser()
     image_url = "https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars"
     browser.visit(image_url)
     html = browser.html
     soup = BeautifulSoup(html, "html.parser")
     image = soup.find("img", class_="thumb")["src"]
     featured_image_url = "https://www.jpl.nasa.gov" + image
+    browser.quit()
     return featured_image_url
 
 # # Mars Weather
@@ -70,19 +75,21 @@ def marsWeather():
 
 # # Mars Facts
 def marsFacts():
+    browser=init_browser()
     facts_url = "https://space-facts.com/mars/"
     browser.visit(facts_url)
     mars_data = pd.read_html(facts_url)
-    mars_data = pd.DataFrame(mars_data[0])
-    mars_data.columns = ["Description", "Value"]
-    mars_data = mars_data.set_index("Description")
-    mars_facts = mars_data.to_html(index = True, header =True)
+    mars_data = mars_data[1]
+    mars_facts = mars_data.to_html(header = False, index = False)
+    print(mars_facts)
+    browser.quit()
     return mars_facts
 
 
 # # Mars Hemispheres
 def marsHem():
-    import time 
+
+    browser=init_browser()
     hemispheres_url = "https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars"
     browser.visit(hemispheres_url)
     html = browser.html
@@ -91,8 +98,9 @@ def marsHem():
 
     products = soup.find("div", class_ = "result-list" )
     hemispheres = products.find_all("div", class_="item")
-
+    
     for hemisphere in hemispheres:
+        time.sleep(5)
         title = hemisphere.find("h3").text
         title = title.replace("Enhanced", "")
         end_link = hemisphere.find("a")["href"]
@@ -104,6 +112,7 @@ def marsHem():
         image_url = downloads.find("a")["href"]
         dictionary = {"title": title, "img_url": image_url}
         mars_hemisphere.append(dictionary)
+    browser.quit()
     return mars_hemisphere
 
 
